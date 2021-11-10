@@ -6,7 +6,7 @@ local lightgray = "#aeaeae"
 return {
     normal = {
         a = {fg = colors.white, bg = colors.blue, gui = 'bold'},
-        b = {fg = lightgray, bg = darkgray},
+        b = {fg = colors.gray, bg = colors.black},
         c = {fg = colors.gray, bg = colors.black},
     },
     insert = {
