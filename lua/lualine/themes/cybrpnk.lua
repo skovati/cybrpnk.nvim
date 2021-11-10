@@ -6,8 +6,8 @@ local lightgrey = "#aeaeae"
 return {
     normal = {
         a = {bg = colors.grey, fg = colors.black, gui = 'bold'},
-        b = {bg = colors.lightgrey, fg = colors.white},
-        c = {bg = colors.darkgrey, fg = colors.grey}
+        b = {bg = lightgrey, fg = colors.white},
+        c = {bg = darkgrey, fg = colors.grey},
     },
     insert = {
         a = {bg = colors.blue, fg = colors.black, gui = 'bold'},
@@ -22,8 +22,8 @@ return {
         a = {bg = colors.green, fg = colors.black, gui = 'bold'},
     },
     inactive = {
-        a = {bg = colors.darkgrey, fg = colors.grey, gui = 'bold'},
-        b = {bg = colors.darkgrey, fg = colors.grey},
-        c = {bg = colors.darkgrey, fg = colors.grey}
+        a = {bg = darkgrey, fg = colors.grey, gui = 'bold'},
+        b = {bg = darkgrey, fg = colors.grey},
+        c = {bg = darkgrey, fg = colors.grey},
     }
 }
