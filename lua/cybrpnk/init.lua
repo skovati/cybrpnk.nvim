@@ -1,5 +1,5 @@
 local lush = require "lush"
-local colors. = require "cybrpnk.colors"
+local colors = require "cybrpnk.colors"
 
 vim.g.terminal_color_0 = colors.black.hex
 vim.g.terminal_color_1 = colors.red.hex
