@@ -1,37 +1,37 @@
 require("cybrpnk/colors")
 
-local darkGrey = "#393939"
-local lightGrey = "#aeaeae"
+local darkgrey = "#393939"
+local lightgrey = "#aeaeae"
 
 return {
-  inactive = {
-    a = { fg = darkGrey, bg = lightGrey, gui = 'bold' },
-    b = { fg = colors.grey, bg = colors.white },
-    c = { fg = darkGrey, bg = colors.lightGrey },
-  },
   normal = {
-    a = { fg = colors.lightGrey, bg = colors.blue, gui = 'bold' },
-    b = { fg = colors.darkGrey, bg = colors.lightGrey },
-    c = { fg = colors.grey, bg = colors.lightGrey },
-  },
-  command = {
-    a = { fg = colors.lightGrey, bg = colors.green, gui = 'bold' },
-    b = { fg = colors.darkGrey, bg = colors.lightGrey },
-    c = { fg = colors.grey, bg = colors.lightGrey },
-  },
-  visual = {
-    a = { fg = colors.lightGrey, bg = colors.orange, gui = 'bold' },
-    b = { fg = colors.darkGrey, bg = colors.lightGrey },
-    c = { fg = colors.grey, bg = colors.lightGrey },
-  },
-  replace = {
-    a = { fg = colors.lightGrey, bg = colors.red, gui = 'bold' },
-    b = { fg = colors.darkGrey, bg = colors.lightGrey },
-    c = { fg = colors.grey, bg = colors.lightGrey },
+    a = {bg = colors.grey, fg = colors.black, gui = 'bold'},
+    b = {bg = colors.lightgrey, fg = colors.white},
+    c = {bg = colors.darkgrey, fg = colors.grey}
   },
   insert = {
-    a = { fg = colors.lightGrey, bg = colors.yellow, gui = 'bold' },
-    b = { fg = colors.darkGrey, bg = colors.lightGrey },
-    c = { fg = colors.grey, bg = colors.lightGrey },
+    a = {bg = colors.blue, fg = colors.black, gui = 'bold'},
+    b = {bg = colors.lightgrey, fg = colors.white},
+    c = {bg = colors.lightgrey, fg = colors.white}
   },
+  visual = {
+    a = {bg = colors.yellow, fg = colors.black, gui = 'bold'},
+    b = {bg = colors.lightgrey, fg = colors.white},
+    c = {bg = colors.lightgrey, fg = colors.black}
+  },
+  replace = {
+    a = {bg = colors.red, fg = colors.black, gui = 'bold'},
+    b = {bg = colors.lightgrey, fg = colors.white},
+    c = {bg = colors.black, fg = colors.white}
+  },
+  command = {
+    a = {bg = colors.green, fg = colors.black, gui = 'bold'},
+    b = {bg = colors.lightgrey, fg = colors.white},
+    c = {bg = colors.lightgrey, fg = colors.black}
+  },
+  inactive = {
+    a = {bg = colors.darkgrey, fg = colors.grey, gui = 'bold'},
+    b = {bg = colors.darkgrey, fg = colors.grey},
+    c = {bg = colors.darkgrey, fg = colors.grey}
+  }
 }
