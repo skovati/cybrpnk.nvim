@@ -6,25 +6,25 @@ local lightgray = "#aeaeae"
 
 return {
     normal = {
-        a = {fg = colors.white, bg = colors.blue, gui = "bold"},
+        a = {fg = colors.white.hex, bg = colors.blue.hex, gui = "bold"},
         b = {fg = lightgray, bg = darkgray},
-        c = {fg = lightgray, bg = colors.black},
+        c = {fg = lightgray, bg = colors.black.hex},
     },
     insert = {
-        a = {fg = colors.white, bg = colors.red, gui = "bold"},
+        a = {fg = colors.white.hex, bg = colors.red.hex, gui = "bold"},
     },
     visual = {
-        a = {fg = colors.white, bg = colors.cyan, gui = "bold"},
+        a = {fg = colors.white.hex, bg = colors.cyan.hex, gui = "bold"},
     },
     replace = {
-        a = {fg = colors.white, bg = colors.magenta, gui = "bold"},
+        a = {fg = colors.white.hex, bg = colors.magenta.hex, gui = "bold"},
     },
     command = {
-        a = {fg = colors.white, bg = colors.green, gui = "bold"},
+        a = {fg = colors.white.hex, bg = colors.green.hex, gui = "bold"},
     },
     inactive = {
-        a = {fg = colors.gray, bg = darkgray, gui = "bold"},
-        b = {fg = colors.gray, bg = darkgray},
-        c = {fg = colors.gray, bg = darkgray},
+        a = {fg = colors.gray.hex, bg = darkgray, gui = "bold"},
+        b = {fg = colors.gray.hex, bg = darkgray},
+        c = {fg = colors.gray.hex, bg = darkgray},
     }
 }
