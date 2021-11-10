@@ -102,11 +102,11 @@ local theme = lush(function()
         Keyword        {fg = colors.red}, --  any other keyword
         Exception      {fg = colors.orange}, --  try, catch, throw
 
-        PreProc        {}, -- (preferred) generic Preprocessor
-        Include        { }, --  preprocessor #include
-        Define         { }, --   preprocessor #define
-        Macro          { }, --    same as Define
-        PreCondit      { }, --  preprocessor #if, #else, #endif, etc.
+        -- PreProc        {}, -- (preferred) generic Preprocessor
+        -- Include        { }, --  preprocessor #include
+        -- Define         { }, --   preprocessor #define
+        -- Macro          { }, --    same as Define
+        -- PreCondit      { }, --  preprocessor #if, #else, #endif, etc.
 
         Type           {fg = colors.magenta, gui = "bold"}, -- (preferred) int, long, char, etc.
         StorageClass   {Type}, -- static, register, volatile, etc.
