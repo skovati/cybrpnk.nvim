@@ -5,25 +5,25 @@ local lightgrey = "#aeaeae"
 
 return {
     normal = {
-        a = {bg = colors.grey, fg = colors.black, gui = 'bold'},
-        b = {bg = lightgrey, fg = colors.white},
-        c = {bg = darkgrey, fg = colors.grey},
+        a = {fg = colors.white, bg = colors.blue, gui = 'bold'},
+        b = {fg = lightgrey, bg = colors.darkgrey},
+        c = {fg = grey, bg = colors.black},
     },
     insert = {
-        a = {bg = colors.blue, fg = colors.black, gui = 'bold'},
+        a = {fg = colors.white, bg = colors.red, gui = 'bold'},
     },
     visual = {
-        a = {bg = colors.yellow, fg = colors.black, gui = 'bold'},
+        a = {fg = colors.white, bg = colors.cyan, gui = 'bold'},
     },
     replace = {
-        a = {bg = colors.red, fg = colors.black, gui = 'bold'},
+        a = {fg = colors.white, bg = colors.magenta, gui = 'bold'},
     },
     command = {
-        a = {bg = colors.green, fg = colors.black, gui = 'bold'},
+        a = {fg = colors.white, bg = colors.green, gui = 'bold'},
     },
     inactive = {
-        a = {bg = darkgrey, fg = colors.grey, gui = 'bold'},
-        b = {bg = darkgrey, fg = colors.grey},
-        c = {bg = darkgrey, fg = colors.grey},
+        a = {fg = colors.grey, bg = darkgrey, gui = 'bold'},
+        b = {fg = colors.grey, bg = darkgrey},
+        c = {fg = colors.grey, bg = darkgrey},
     }
 }
