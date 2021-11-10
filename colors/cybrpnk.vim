@@ -17,4 +17,4 @@ let g:colors_name="cybrpnk"
 lua package.loaded['lush_theme.cybrpnk'] = nil
 
 " include our theme file and pass it to lush to apply
-lua require('lush')(require('lush_theme.cybrpnk'))
+lua require('lush')(require('cybrpnk'))
