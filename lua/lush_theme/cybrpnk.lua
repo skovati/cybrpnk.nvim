@@ -14,6 +14,23 @@ local colors = {
     orange = hsl("#cb7437"),
 }
 
+vim.g.terminal_color_0 = colors.black.hex
+vim.g.terminal_color_1 = colors.red.hex
+vim.g.terminal_color_2 = colors.green.hex
+vim.g.terminal_color_3 = colors.yellow.hex
+vim.g.terminal_color_4 = colors.blue.hex
+vim.g.terminal_color_5 = colors.magenta.hex
+vim.g.terminal_color_6 = colors.cyan.hex
+vim.g.terminal_color_7 = colors.white.hex
+vim.g.terminal_color_8 = colors.black.hex
+vim.g.terminal_color_9 = colors.red.hex
+vim.g.terminal_color_10 = colors.green.hex
+vim.g.terminal_color_11 = colors.yellow.hex
+vim.g.terminal_color_12 = colors.blue.hex
+vim.g.terminal_color_13 = colors.magenta.hex
+vim.g.terminal_color_14 = colors.cyan.hex
+vim.g.terminal_color_15 = colors.white.hex
+
 local theme = lush(function()
     return {
         Normal       {bg = colors.black,fg = colors.white}, -- normal text
@@ -38,11 +55,11 @@ local theme = lush(function()
         Folded       {Comment}, -- line used for closed folds
         FoldColumn   {Comment}, -- 'foldcolumn'
         SignColumn   {fg = colors.grey, bg = colors.black}, -- column where |signs| are displayed
-        IncSearch    {fg = colors.orange, gui = "bold"}, -- 'incsearch' highlighting; also used for the text replaced with ":s///c"
+        IncSearch    {fg = colors.orange, bg = colors.black.lighten(20), gui = "bold"}, -- 'incsearch' highlighting; also used for the text replaced with ":s///c"
         Substitute   {IncSearch}, -- |:substitute| replacement text highlighting
         LineNr       {fg = colors.grey}, -- Line number for ":number" and ":#" commands, and when 'number' or 'relativenumber' option is set.
         CursorLineNr {IncSearch}, -- Like LineNr when 'cursorline' or 'relativenumber' is set for the cursor line.
-        MatchParen   {fg = colors.orange, bg = colors.black.lighten(20), gui = "bold"}, -- The character under the cursor or just before it, if it is a paired bracket, and its match. |pi_paren.txt|
+        MatchParen   {IncSearch}, -- The character under the cursor or just before it, if it is a paired bracket, and its match. |pi_paren.txt|
         ModeMsg      {fg = colors.orange}, -- 'showmode' message (e.g., "-- INSERT -- ")
         -- MsgArea      {fg = colors.}, -- Area for messages and cmdline
         -- MsgSeparator { }, -- Separator for scrolled messages, `msgsep` flag of 'display'
