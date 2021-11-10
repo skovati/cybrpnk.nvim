@@ -21,7 +21,7 @@ vim.g.terminal_color_15 = colors.white.hex
 local theme = lush(function()
     return {
         Normal       {bg = colors.black,fg = colors.white}, -- normal text
-        Comment      {fg = colors.grey}, -- any comment
+        Comment      {fg = colors.gray}, -- any comment
         ColorColumn  {Comment}, -- used for the columns set with 'colorcolumn'
         Conceal      {Comment}, -- placeholder characters substituted for concealed text (see 'conceallevel')
         Cursor       {Normal}, -- character under the cursor
@@ -36,15 +36,15 @@ local theme = lush(function()
         DiffText     {fg = colors.white, bg = colors.red}, -- diff mode: Changed text within a changed line |diff.txt|
         EndOfBuffer  {Comment}, -- filler lines (~) after the end of the buffer.  By default, this is highlighted like |hl-NonText|.
         TermCursor   {fg = colors.white}, -- cursor in a focused terminal
-        TermCursorNC {fg = colors.grey}, -- cursor in an unfocused terminal
+        TermCursorNC {fg = colors.gray}, -- cursor in an unfocused terminal
         ErrorMsg     {DiffText}, -- error messages on the command line
         VertSplit    {Comment}, -- the column separating vertically split windows
         Folded       {Comment}, -- line used for closed folds
         FoldColumn   {Comment}, -- 'foldcolumn'
-        SignColumn   {fg = colors.grey, bg = colors.black}, -- column where |signs| are displayed
+        SignColumn   {fg = colors.gray, bg = colors.black}, -- column where |signs| are displayed
         IncSearch    {fg = colors.orange, bg = colors.black.lighten(20), gui = "bold"}, -- 'incsearch' highlighting; also used for the text replaced with ":s///c"
         Substitute   {IncSearch}, -- |:substitute| replacement text highlighting
-        LineNr       {fg = colors.grey}, -- Line number for ":number" and ":#" commands, and when 'number' or 'relativenumber' option is set.
+        LineNr       {fg = colors.gray}, -- Line number for ":number" and ":#" commands, and when 'number' or 'relativenumber' option is set.
         CursorLineNr {IncSearch}, -- Like LineNr when 'cursorline' or 'relativenumber' is set for the cursor line.
         MatchParen   {IncSearch}, -- The character under the cursor or just before it, if it is a paired bracket, and its match. |pi_paren.txt|
         ModeMsg      {fg = colors.orange}, -- 'showmode' message (e.g., "-- INSERT -- ")
@@ -54,7 +54,7 @@ local theme = lush(function()
         NonText      {Comment}, -- '@' at the end of the window, characters from 'showbreak' and other characters that do not really exist in the text (e.g., ">" displayed when a double-wide character doesn't fit at the end of the line). See also |hl-EndOfBuffer|.
         NormalFloat  {Normal}, -- Normal text in floating windows.
         NormalNC     {Normal}, -- normal text in non-current windows
-        Pmenu        {fg = colors.white, bg = colors.grey.darken(40)}, -- Popup menu: normal item.
+        Pmenu        {fg = colors.white, bg = colors.gray.darken(40)}, -- Popup menu: normal item.
         PmenuSel     {fg = colors.black, bg = colors.cyan}, -- Popup menu: selected item.
         PmenuSbar    {fg = colors.black, bg = colors.white}, -- Popup menu: scrollbar.
         PmenuThumb   {fg = colors.white, bg = colors.black}, -- Popup menu: Thumb of the scrollbar.

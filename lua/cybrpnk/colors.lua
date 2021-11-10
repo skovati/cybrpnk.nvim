@@ -10,7 +10,7 @@ local colors = {
     magenta = hsl("#b080a4"),
     cyan = hsl("#76ab97"),
     white = hsl("#e8e4d9"),
-    grey = hsl("#6e6e6e"),
+    gray = hsl("#6e6e6e"),
     orange = hsl("#cb7437"),
 }
 

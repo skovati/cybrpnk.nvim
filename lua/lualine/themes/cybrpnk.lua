@@ -1,13 +1,13 @@
 local colors = require("cybrpnk.colors")
 
-local darkgrey = "#393939"
-local lightgrey = "#aeaeae"
+local darkgray = "#393939"
+local lightgray = "#aeaeae"
 
 return {
     normal = {
         a = {fg = colors.white, bg = colors.blue, gui = 'bold'},
-        b = {fg = lightgrey, bg = colors.darkgrey},
-        c = {fg = grey, bg = colors.black},
+        b = {fg = lightgray, bg = darkgray},
+        c = {fg = colors.gray, bg = colors.black},
     },
     insert = {
         a = {fg = colors.white, bg = colors.red, gui = 'bold'},
@@ -22,8 +22,8 @@ return {
         a = {fg = colors.white, bg = colors.green, gui = 'bold'},
     },
     inactive = {
-        a = {fg = colors.grey, bg = darkgrey, gui = 'bold'},
-        b = {fg = colors.grey, bg = darkgrey},
-        c = {fg = colors.grey, bg = darkgrey},
+        a = {fg = colors.gray, bg = darkgray, gui = 'bold'},
+        b = {fg = colors.gray, bg = darkgray},
+        c = {fg = colors.gray, bg = darkgray},
     }
 }
