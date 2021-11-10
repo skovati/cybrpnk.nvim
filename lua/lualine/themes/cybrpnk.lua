@@ -1,4 +1,5 @@
-local colors = require("cybrpnk.colors")
+package.loaded['cybrpnk.colors'] = nil
+local colors = require "cybrpnk.colors"
 
 local darkgray = "#393939"
 local lightgray = "#aeaeae"
